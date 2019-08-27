@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>Memory Game</title>
+</head>
+<body>
+	<section class="page start-page page_state_visible">
+		<img class="start-page__image" src="img/image-start.png">
+		<p class="start-page__text">Memory Game</p>
+		<button class="start-page__button button">Начать игру</button>
+	</section>
+	<section class="page game-page page_state_invisible">
+		<div class="game-page__header">
+			<button class="game-page__button">Начать заново</button>
+			<p class="game-page__text">Очки: <span class="game-page__field"></span></p>
+		</div>
+		<div class="game-page__main"></div>
+	</section>
+	<section class="page end-page page_state_invisible">
+		<img class="end-page__image" src="img/image-end.png">
+		<p class="end-page__text">Поздравляем!</p>
+		<p class="end-page__text">Ваш итоговый счет: <span class="end-page__field">500</span></p>
+		<button class="end-page__button button">Еще раз</button>
+	</section>
+	<script src="js/main.min.js"></script>
+</body>
+</html>
